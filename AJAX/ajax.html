@@ -44,8 +44,14 @@
                 usedId: 1,
             },
             (data) => {console.log('mizu?')}
-            ).done(alert("Kész"))
+            )
+            // .done(alert("Kész"))
 
+            $.ajax({
+                url: "https://jsonplaceholder.typicode.com/users/1",
+                success : () =>console.log("Siker") , 
+                error : () => console.log("Hiba")
+            })
         })
 
 
